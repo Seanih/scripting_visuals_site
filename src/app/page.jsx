@@ -1,0 +1,72 @@
+'use client';
+
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+const Homepage = () => {
+	return (
+		<motion.div
+			className='h-full text-white'
+			initial={{ y: '-200vh' }}
+			animate={{ y: '0%' }}
+			transition={{ duration: 1 }}
+		>
+			<div className='h-full flex lg:flex-row flex-col px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
+				{/* Image Container */}
+				<div className='h-1/2 lg:h-full lg:w-1/2 relative'>
+					<Image
+						src={'/big_sv.png'}
+						alt='a pic'
+						fill
+						className='object-contain'
+					/>
+				</div>
+				{/* Text Container */}
+				<div className='h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center'>
+					{/* Title */}
+					<h1 className='text-4xl text-center md:text-6xl font-bold px-0'>
+						Scripting{' '}
+						<span>
+							{'Visuals'.split('').map((letter, index) => (
+								<motion.span
+									key={index}
+									className='text-transparent bg-clip-text bg-gradient-to-r from-white to-svBlue'
+									initial={{ opacity: 1 }}
+									animate={{ opacity: 0 }}
+									transition={{
+										duration: 3,
+										repeat: Infinity,
+										delay: index * 0.1,
+									}}
+								>
+									{letter}
+								</motion.span>
+							))}
+						</span>
+					</h1>
+					{/* DESC */}
+					<p className='text-center  md:text-xl'>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+						illum neque labore doloribus! Adipisci, nisi!
+					</p>
+					<div className='w-full flex gap-4 justify-center'>
+						<Link href={'/portfolio'}>
+							<button className='transition ease-in-out duration-300 p-4 rounded-lg ring-2 ring-black  font-semibold text-black bg-svBlue hover:bg-cyan-200'>
+								View My Work
+							</button>
+						</Link>
+
+						<Link href={'/contact'}>
+							<button className='transition ease-in-out duration-300 p-4 rounded-lg ring-2 ring-black bg-black font-semibold text-white hover:bg-cyan-200 hover:text-black'>
+								Contact Me
+							</button>
+						</Link>
+					</div>
+				</div>
+			</div>
+		</motion.div>
+	);
+};
+
+export default Homepage;
