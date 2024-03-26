@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 const ContactPage = () => {
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState(false);
+
 	const text = 'Looking forward to working with you!';
 
 	const form = useRef();
@@ -65,22 +66,24 @@ const ContactPage = () => {
 				<form
 					onSubmit={sendEmail}
 					ref={form}
-					className='h-3/5 w-5/6 px-4 self-center bg-red-50 rounded-xl text-xl flex flex-col justify-center md:px-20 py-8 mt-4 lg:mt-0 mb-4'
+					className='h-4/5 lg:h-3/5 w-5/6 px-4 self-center bg-red-50 rounded-xl text-xl flex flex-col justify-center md:px-20 py-4 mt-4 lg:mt-0 mb-4'
 				>
 					<span>Hey Sean,</span>
 					<textarea
 						rows={5}
-						className='bg-svBlue border-b-2 border-b-black outline-none px-2 mb-8'
+						className='border-b-2 border-l-2 border-black bg-gradient-to-b from-gray-200 to-gray-400 outline-none p-2 mb-8 rounded-lg'
 						name='user_message'
+						required
 					/>
-					<span>My mail address is:</span>
+					<span>My email address is:</span>
 					<input
 						name='user_email'
-						type='text'
-						className='bg-svBlue border-b-2 border-b-black outline-none px-2 mb-8'
+						type='email'
+						className='border-b-2 border-l-2 border-black bg-gradient-to-b from-gray-200 to-gray-400 outline-none p-2 mb-8 rounded-lg'
+						required
 					/>
 					<span>Regards</span>
-					<button className='bg-purple-200 rounded font-semibold text-gray-600 p-4'>
+					<button className='rounded-lg  p-2 transition ease-in-out duration-300 ring-2 ring-black  font-semibold text-black bg-cyan-500 hover:bg-svBlue'>
 						Send
 					</button>
 					{success && (
