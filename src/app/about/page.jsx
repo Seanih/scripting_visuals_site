@@ -46,14 +46,14 @@ const AboutPage = () => {
 						<p className='text-lg bg-gradient-to-b from-gray-700 to-black text-white p-4 rounded-lg'>
 							I&apos;m Sean Anih (pronounced{' '}
 							<span className='italic'>Ah-nee</span>); a Software Engineer and
-							Data Analyst who loves solving problems with code and unlocking
-							the potential of data. My career path has been an interesting
-							fusion of corporate finance and creative entrepreneurship, where I
-							spent 5 years working for Wells Fargo in a variety of roles and 12
-							years operating my own recording studio. Now entering the world of
-							IT, I bring with me a wealth of diverse experiences and a
-							commitment to pursuing growth and excellence in this amazing
-							field!
+							Data Analyst who loves the thrill of solving problems with
+							programming and unlocking the potential of data. My career path
+							has been an interesting mix of corporate finance and creative
+							entrepreneurship, where I spent 5 years working for Wells Fargo in
+							a variety of roles and 12 years operating my own recording studio.
+							Now entering the world of IT, I bring a diverse set of
+							experiences, a new perspective, and a commitment to pursuing
+							growth and excellence in this amazing field!
 						</p>
 
 						{/* SCROLL SVG */}
@@ -212,13 +212,18 @@ const AboutPage = () => {
 										<span className='text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-900 to-gray-700'>
 											Visuals
 										</span>{' '}
-										following a year+ of intensive skill acquisition; offering
-										Scripting, Automation, Desktop Apps, and Data Analysis &
-										Visualization(DAV) services.
+										following a year+ of learning and skill acquisition.
+										Offering services in:
+										<ul className='list-disc relative left-6 pr-6'>
+											<li>Scripting</li>
+											<li>Automation</li>
+											<li>Desktop Apps</li>
+											<li>Data Analysis & Visualization (DAV)</li>
+										</ul>
 									</div>
 									{/* JOB DATE */}
 									<div className='bg-black p-3 rounded-lg text-red-400 font-semibold w-fit'>
-										April 2024 - Present
+										2023 - Present
 									</div>
 								</div>
 								{/* CENTER */}

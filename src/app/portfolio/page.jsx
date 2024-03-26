@@ -31,7 +31,7 @@ const items = [
 	},
 	{
 		id: 4,
-		color: 'from-cyan-600 to-cyan-900',
+		color: 'from-cyan-600 to-cyan-800',
 		title: 'Spotify Music App',
 		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
 		img: 'https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
@@ -59,6 +59,9 @@ const PortfolioPage = () => {
 				<div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
 					<motion.div style={{ x }} className='flex'>
 						<div className='h-screen w-screen flex items-center justify-center bg-gradient-to-r from-gray-500 to-gray-900' />
+						{/* 
+              //* PROJECT ITEMS
+            */}
 						{items.map(item => (
 							<div
 								className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
@@ -75,7 +78,7 @@ const PortfolioPage = () => {
 										{item.desc}
 									</p>
 									<Link href={item.link} className='flex justify-end'>
-										<button className='p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded'>
+										<button className='text-sm md:p-4 md:text-md lg:p-8 lg:text-lg transition ease-in-out duration-300 p-4  ring-2 ring-black  text-black bg-svBlue hover:bg-cyan-200 font-semibold m-4 rounded'>
 											See Demo
 										</button>
 									</Link>
@@ -85,8 +88,8 @@ const PortfolioPage = () => {
 					</motion.div>
 				</div>
 			</div>
-			<div className='w-screen h-screen flex flex-col items-center justify-center text-center bg-gradient-to-tr from-cyan-600 to-cyan-900'>
-				<h1 className='text-5xl lg:text-7xl'>Do you have a project?</h1>
+			<div className='w-screen h-screen flex flex-col items-center justify-center text-center bg-gradient-to-tr from-cyan-500 to-cyan-800'>
+				<h1 className='text-5xl lg:text-7xl'>Need help with a project?</h1>
 				<div className='relative '>
 					<motion.svg
 						animate={{ rotate: 360 }}
@@ -108,7 +111,7 @@ const PortfolioPage = () => {
 					</motion.svg>
 					<Link
 						href='/contact'
-						className='w-24 h-24 md:w-40 md:h-40 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white text-lg lg:text-xl rounded-full flex items-center justify-center hover:bg-gray-300 hover:text-black transition duration-200 ease-in-out'
+						className='w-24 h-24 md:w-40 md:h-40 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white text-lg lg:text-xl rounded-full flex items-center justify-center hover:bg-gray-300 hover:text-black hover:scale-110 transition duration-200 ease-in-out'
 					>
 						Contact Me
 					</Link>
