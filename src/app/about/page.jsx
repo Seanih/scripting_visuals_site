@@ -45,15 +45,16 @@ const AboutPage = () => {
 						{/* BIOGRAPHY DESC */}
 						<p className='text-lg bg-gradient-to-b from-gray-700 to-black text-white p-4 rounded-lg'>
 							I&apos;m Sean Anih (pronounced{' '}
-							<span className='italic'>Ah-nee</span>); a Software Engineer and
-							Data Analyst who loves the thrill of solving problems with
-							programming and unlocking the potential of data. My career path
-							has been an interesting mix of corporate finance and creative
-							entrepreneurship, where I spent 5 years working for Wells Fargo in
-							a variety of roles and 12 years operating my own recording studio.
-							Now entering the world of IT, I bring a diverse set of
-							experiences, a new perspective, and a commitment to pursuing
-							growth and excellence in this amazing field!
+							<span className='italic'>Ah-nee</span>), a Software Engineer and
+							Data Analyst. I&apos;m driven by the thrill of solving puzzles
+							with programming and unlocking the power of data, and I&apos;m
+							extremely excited to collaborate with you and help you achieve
+							your business goals. My career path has been an interesting mix of
+							corporate finance and creative entrepreneurship, where I spent 5
+							years working for Wells Fargo in a variety of roles and 12 years
+							operating my own recording studio. Now entering the world of IT, I
+							bring a diverse set of experiences, perspectives, and a commitment
+							to pursuing growth and excellence in this amazing field!
 						</p>
 
 						{/* SCROLL SVG */}

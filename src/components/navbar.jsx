@@ -80,11 +80,13 @@ const Navbar = () => {
 			<div className='md:hidden lg:flex xl:w-1/3 xl:justify-center'>
 				<Link
 					href='/'
-					className='text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center'
+					className='text-sm bg-white rounded-md p-1 font-semibold flex items-center justify-center'
 				>
-					<span className='px-2 text-white mr-1'>Scripting</span>
-					<span className='px-2 h-8 rounded bg-white text-black flex items-center justify-center'>
-						Visuals
+					<span className='px-2 mr-1'>Scripting</span>
+					<span className='px-2 h-8 rounded bg-black flex items-center justify-center'>
+						<div className='text-transparent bg-clip-text bg-gradient-to-r from-white to-svBlue font-semibold'>
+							Visuals
+						</div>
 					</span>
 				</Link>
 			</div>
