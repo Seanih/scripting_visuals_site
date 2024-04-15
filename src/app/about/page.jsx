@@ -105,9 +105,6 @@ const AboutPage = () => {
 							className='flex gap-4 flex-wrap justify-center'
 						>
 							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Tableau
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
 								Python
 							</div>
 							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
@@ -136,6 +133,9 @@ const AboutPage = () => {
 							</div>
 							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
 								Command Line Interface (CLI)
+							</div>
+							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+								Tableau
 							</div>
 						</motion.div>
 						{/* SCROLL SVG */}
