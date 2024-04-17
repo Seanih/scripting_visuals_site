@@ -58,7 +58,7 @@ const Homepage = () => {
 					</p>
 					<ul className='text-center text-xl'>
 						<li>Scripting & Automation</li>
-						<li>Desktop Applications</li>
+						<li>Desktop & Web Applications</li>
 						<li>Data Analysis & Visualization</li>
 						<li>Interactive Dashboards</li>
 					</ul>

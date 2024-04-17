@@ -9,7 +9,7 @@ const items = [
 		id: 1,
 		color: 'from-gray-900 to-black',
 		title: 'File Shredder',
-		desc: 'Most people believe that emptying files or folders in their trash bin fully deletes the data, but the truth is that bad actors can still recover that data with the right software. In order to ensure sensitive data is properly destroyed and unretrievable, you need to employ an algorithm that overwrites the data multiple times before deleting it. You can download my free File Shredder for Windows/MacOS that does exactly that.',
+		desc: 'Most people believe that emptying files or folders in their trash bin fully deletes the data, but the truth is that bad actors can still recover that data with the right software. In order to ensure sensitive data is properly destroyed and unretrievable, you need to employ an algorithm that overwrites the data multiple times before deleting it. You can download my free File Shredder for MacOS that does exactly that.',
 		img: '/shredding_pic.jpeg',
 		link: 'https://github.com/Seanih/file_destroyer',
 	},
@@ -19,7 +19,7 @@ const items = [
 		title: 'Automation Script',
 		desc: "If you work heavily with computers, there's a strong chance that something in your workflow can be automated to help make things a bit easier with less repetitive/tedious work. As an example, I wrote a script that can book an appointment at a facility and sends out email/text notifications with confirmation details. Whether it's internet related or not, my goal is to help you optimize your workflow.",
 		img: '/automation_pic.jpeg',
-		link: 'https://lama.dev',
+		link: 'https://github.com/Seanih/booking_script/blob/master/booking.py',
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ const items = [
 		title: 'Real Estate Dashboard',
 		desc: 'This dashboard project offers a comprehensive view of home prices and sales volumes in the UK spanning the period before, during, and after the 2008 housing crash. Through data analysis and visualization, users can gain a nuanced understanding of the market activity and the interesting relationship between sales volumes and prices. Dashboards and other visual tools help stakeholders make informed decisions, navigate risks, and seize opportunities in an ever-evolving landscape.',
 		img: '/dashboard_pic.png',
-		link: 'https://lama.dev',
+		link: 'https://public.tableau.com/app/profile/sean.anih/viz/real_estate_story/UKRealEstateStory?publish=yes',
 	},
 	{
 		id: 4,
@@ -35,7 +35,7 @@ const items = [
 		title: 'scriptingvisuals.com',
 		desc: "My introduction to programming was actually through web development, so it was only right for me to build this website myself. I decided to use Next JS due to its rich toolset, Tailwind CSS to quickly create and edit styles, and Framer Motion to handle the animations. Whether it's a landing page or a full-stack application, I'm more than happy to help with any web development you might need!",
 		img: '/my_site.png',
-		link: 'https://lama.dev',
+		link: 'https://github.com/Seanih/scripting_visuals_site',
 	},
 ];
 
@@ -131,18 +131,18 @@ const PortfolioPage = () => {
 													MacOS
 												</button>
 											</a>
-											<a href=''>
+											{/* <a href=''>
 												<button className='text-sm md:text-md lg:p-8 lg:text-lg transition ease-in-out duration-300 p-4 rounded ring-2 ring-black  font-semibold text-black bg-svBlue hover:bg-cyan-200'>
 													Windows
 												</button>
-											</a>
+											</a> */}
 										</div>
 									) : (
-										<Link href={item.link} className='flex'>
+										<a href={item.link} target='_' className='flex'>
 											<button className='text-sm md:text-md lg:p-8 lg:text-lg transition ease-in-out duration-300 p-4 ring-2 ring-black  text-black bg-svBlue hover:bg-cyan-200 font-semibold rounded'>
 												{item.id == 3 ? 'Visit Dashboard' : 'View My Code'}
 											</button>
-										</Link>
+										</a>
 									)}
 								</div>
 							</div>

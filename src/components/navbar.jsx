@@ -92,15 +92,15 @@ const Navbar = () => {
 			</div>
 			{/* SOCIAL */}
 			<div className='hidden md:flex gap-4 w-1/3 md:justify-end'>
-				<Link href='/'>
-					<Image src='/github.png' alt='' width={24} height={24} />
-				</Link>
-				<Link href='/'>
+				<a href='https://www.linkedin.com/in/sean-anih/' target='_'>
 					<Image src='/linkedin.png' alt='linkedin' width={24} height={24} />
-				</Link>
-				<Link href='/'>
+				</a>
+				<a href='https://medium.com/@scripting.visuals' target='_'>
 					<Image src='/medium.png' alt='medium' width={24} height={24} />
-				</Link>
+				</a>
+				<a href='https://twitter.com/Sean_Scripts' target='_'>
+					<Image src='/x_logo.png' alt='x' width={24} height={24} />
+				</a>
 			</div>
 			{/* RESPONSIVE MENU */}
 			<div className='md:hidden'>
