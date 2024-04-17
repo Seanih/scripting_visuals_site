@@ -126,12 +126,12 @@ const PortfolioPage = () => {
 									</p>
 									{item.id == 1 && isLargeScreen ? (
 										<div className='flex gap-4'>
-											<a href='/file_destroyer.zip'>
+											<a href='/destroyer_mac.zip'>
 												<button className='text-sm md:text-md lg:p-8 lg:text-lg transition ease-in-out duration-300 p-4 rounded ring-2 ring-black  font-semibold text-black bg-svBlue hover:bg-cyan-200'>
 													MacOS
 												</button>
 											</a>
-											<a href='/file_destroyer(Windows).zip'>
+											<a href=''>
 												<button className='text-sm md:text-md lg:p-8 lg:text-lg transition ease-in-out duration-300 p-4 rounded ring-2 ring-black  font-semibold text-black bg-svBlue hover:bg-cyan-200'>
 													Windows
 												</button>
