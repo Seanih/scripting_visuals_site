@@ -17,7 +17,7 @@ const items = [
 		id: 2,
 		color: 'from-black to-blue-500',
 		title: 'Automation Script',
-		desc: "If you work heavily with computers, there's a strong chance that something in your workflow can be automated to help make things a bit easier with less repetitive/tedious work. As an example, I wrote a script that can book an appointment at a facility and sends out email/text notifications with confirmation details. Whether it's internet related or not, my goal is to help you optimize your workflow.",
+		desc: "If you use or work heavily with computers, there's a strong chance that something in your daily flow can be automated to help make things a bit easier, or at least cut out some of the repetitive/tedious work. I recently wrote scripts to pay my bills and order my favorite pizza. As a more complicated example, I wrote a script that books an appointment at a facility and sends out email/text notifications with confirmation details. Whether it's internet related or not, my goal is to help you optimize your workflow.",
 		img: '/automation_pic.jpeg',
 		link: 'https://github.com/Seanih/booking_script/blob/master/booking.py',
 	},
