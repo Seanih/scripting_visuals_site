@@ -8,14 +8,26 @@ const ContactPage = () => {
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState(false);
 
-	const text = 'Looking forward to working with you!';
+	const greeting = 'Looking forward to working with you!';
 
 	const form = useRef();
+
+	const containsSpecialChars = str => {
+		const specialCharsRegex = /[@#$%^&*()":{}|<>]/g;
+		return specialCharsRegex.test(str);
+	};
 
 	const sendEmail = e => {
 		e.preventDefault();
 		setError(false);
 		setSuccess(false);
+
+		const message = form.current['user_message'].value;
+
+		if (containsSpecialChars(message)) {
+			setError(true);
+			return;
+		}
 
 		emailjs
 			.sendForm(
@@ -44,9 +56,9 @@ const ContactPage = () => {
 		>
 			<div className='h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
 				{/* TEXT CONTAINER */}
-				<div className='h-1/3 lg:h-full lg:w-1/2 flex items-center justify-center text-4xl text-center md:text-6xl lg:text-left'>
+				<div className='h-1/3 lg:h-full lg:w-1/2 flex items-center justify-center text-4xl text-center md:text-6xl lg:text-left mb-4 lg:mb-0'>
 					<div>
-						{text.split('').map((letter, index) => (
+						{greeting.split('').map((letter, index) => (
 							<motion.span
 								key={index}
 								initial={{ opacity: 1 }}
@@ -66,12 +78,12 @@ const ContactPage = () => {
 				<form
 					onSubmit={sendEmail}
 					ref={form}
-					className='h-4/5 lg:h-3/5 w-5/6 px-4 self-center bg-gradient-to-b from-gray-200 rounded-xl text-xl flex flex-col justify-center md:px-20 py-4 mt-4 lg:mt-0 mb-4'
+					className='h-3/5 w-5/6 px-4 self-center bg-gradient-to-b from-gray-200 rounded-xl text-xl flex flex-col justify-center md:px-20 py-4 mt-4 lg:mt-0 mb-4'
 				>
 					<span>Hey Sean,</span>
 					<textarea
-						rows={5}
-						className='border-b-2 border-l-2 border-black bg-gradient-to-b from-gray-200 to-gray-400 outline-none p-2 mb-8 rounded-lg'
+						rows={3}
+						className='border-b-2 border-l-2 border-black bg-gradient-to-b from-gray-200 to-gray-400 outline-none p-2 mb-8 rounded-lg text-lg'
 						name='user_message'
 						required
 					/>
@@ -92,8 +104,8 @@ const ContactPage = () => {
 						</span>
 					)}
 					{error && (
-						<span className='text-red-600 font-semibold'>
-							Something went wrong!
+						<span className='text-red-400 font-semibold'>
+							Something went wrong. Try again with no special characters.
 						</span>
 					)}
 				</form>

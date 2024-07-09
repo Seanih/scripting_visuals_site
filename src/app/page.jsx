@@ -58,9 +58,9 @@ const Homepage = () => {
 					</p>
 					<ul className='text-center text-xl'>
 						<li>Scripting & Automation</li>
-						<li>Desktop & Web Applications</li>
+						<li>Web & Desktop Applications</li>
 						<li>Data Analysis & Visualization</li>
-						<li>Interactive Dashboards</li>
+						<li>Cybersecurity Consultations</li>
 					</ul>
 					<div className='w-full flex gap-4 justify-center mb-12'>
 						<Link href={'/portfolio'}>

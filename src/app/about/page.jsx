@@ -46,15 +46,16 @@ const AboutPage = () => {
 						<p className='text-lg bg-gradient-to-b from-gray-700 to-black text-white p-4 rounded-lg'>
 							I&apos;m Sean Anih (pronounced{' '}
 							<span className='italic'>Ah-nee</span>), a Software Engineer and
-							Data Analyst. I&apos;m driven by the thrill of solving puzzles
-							with programming and unlocking the power of data, and I&apos;m
-							extremely excited to collaborate with you and help you achieve
+							Security Analyst holding certifications from ISC2 and CompTIA. I
+							have a strong passion for programming and securing assets, and
+							I&apos;m extremely excited to work with you and help you achieve
 							your business goals. My career path has been an interesting mix of
 							corporate finance and creative entrepreneurship, where I spent 5
 							years working for Wells Fargo in a variety of roles and 12 years
-							operating my own recording studio. Now entering the world of IT, I
-							bring a diverse set of experiences, perspectives, and a commitment
-							to pursuing growth and excellence in this amazing field!
+							as an audio engineer, including 6 years running my own recording
+							studio. Now entering the world of IT, I bring a diverse set of
+							experiences, perspectives, and a commitment to pursuing growth and
+							expertise in this amazing field!
 						</p>
 
 						{/* SCROLL SVG */}
@@ -104,38 +105,35 @@ const AboutPage = () => {
 							animate={isSkillRefInView ? { x: 0 } : {}}
 							className='flex gap-4 flex-wrap justify-center'
 						>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
 								Python
 							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								PyQt6
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Qt Designer
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Pandas
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
 								Javascript
 							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Next JS
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
+								Linux
 							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Tailwind CSS
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
 								SQL
 							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
+								Next JS
+							</div>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
+								Tailwind CSS
+							</div>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
 								Git
 							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
-								Command Line Interface (CLI)
-							</div>
-							<div className='rounded  p-2 text-sm md:text-base cursor-pointer bg-black text-white hover:bg-svBlue hover:text-black'>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
 								Tableau
+							</div>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
+								Cybersecurity
+							</div>
+							<div className='rounded  p-2 text-sm md:text-base bg-black text-white hover:bg-svBlue hover:text-black'>
+								Networking
 							</div>
 						</motion.div>
 						{/* SCROLL SVG */}
@@ -197,34 +195,34 @@ const AboutPage = () => {
 								<div className='w-2/5'>
 									{/* JOB TITLE */}
 									<div className='bg-white p-3 font-semibold text-lg rounded-b-lg rounded-s-lg border border-b-black'>
-										Software Engineer || Data Analyst
+										Software Engineer || Security Analyst
 									</div>
 									{/* JOB COMPANY */}
-									<div className='p-1 rounded bg-white font-semibold'>
+									<div className='p-3 text-cyan-700 rounded bg-white font-bold w-fit'>
 										Scripting Visuals
 									</div>
 									{/* JOB DESC */}
 									<div className='p-3 italic bg-gradient-to-b from-gray-300 to-gray-500 rounded-lg'>
 										Launched
-										<span className='text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-900 to-gray-700 pr-2'>
+										<span className='text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-900 to-gray-700'>
 											{' '}
 											Scripting
 										</span>{' '}
-										<span className='text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-900 to-gray-700'>
+										<span className='text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-cyan-900 to-gray-700'>
 											Visuals
 										</span>{' '}
-										following a year+ of learning and skill acquisition.
+										following 2 years of learning and skill acquisition.
 										Offering services in:
 										<ul className='list-disc relative left-6 pr-6'>
-											<li>Scripting</li>
-											<li>Automation</li>
-											<li>Desktop Apps</li>
-											<li>Data Analysis & Visualization (DAV)</li>
+											<li>Scripting & Automation</li>
+											<li>Web & Desktop Apps</li>
+											<li>Data Analysis & Visualization</li>
+											<li>Cybersecurity Consultation</li>
 										</ul>
 									</div>
 									{/* JOB DATE */}
 									<div className='bg-black p-3 rounded-lg text-red-400 font-semibold w-fit'>
-										2023 - Present
+										2024 - Present
 									</div>
 								</div>
 								{/* CENTER */}
@@ -257,18 +255,24 @@ const AboutPage = () => {
 										Audio Engineer
 									</div>
 									{/* JOB COMPANY */}
-									<div className='p-1 rounded bg-white font-semibold w-fit'>
+									<div className='p-3 text-cyan-700 rounded bg-white font-bold w-fit'>
 										Blue Notes Media, LLC
 									</div>
 									{/* JOB DESC */}
 									<div className='p-3 italic bg-gradient-to-b from-gray-300 to-gray-500 rounded-lg'>
-										Provided recording, mixing and mastering services according
-										to client specifications and ensured compliance with
-										recording industry standards
+										<ul className='list-disc relative left-6 pr-6'>
+											<li>
+												Provided recording, mixing and mastering services
+												according to client specifications
+											</li>
+											<li>
+												Ensured projects adhered to commercial recording industry standards
+											</li>
+										</ul>
 									</div>
 									{/* JOB DATE */}
 									<div className='bg-black rounded-lg p-3 text-red-400 font-semibold w-fit'>
-										2011 - 2023{' '}
+										2016 - 2022{' '}
 									</div>
 								</div>
 							</div>
@@ -281,16 +285,16 @@ const AboutPage = () => {
 										Research & Remediation Analyst
 									</div>
 									{/* JOB COMPANY */}
-									<div className='p-1 rounded bg-white font-semibold w-fit'>
-										Wells Fargo
+									<div className='p-3 text-cyan-700 rounded bg-white font-bold w-fit'>
+										Wells Fargo Home Mortgage
 									</div>
 									{/* JOB DESC */}
 									<div className='p-3 italic bg-gradient-to-b from-gray-300 to-gray-500 rounded-lg'>
 										During my time with Wells Fargo I worked as a:
 										<ul className='list-disc relative left-6 pr-6'>
-											<li className=''>Default Loan Servicing Specialist</li>
-											<li className=''>Load Adjustor Specialist</li>
-											<li className=''>Research & Remediation Analyst</li>
+											<li>Default Loan Servicing Specialist</li>
+											<li>Loan Adjustor Specialist</li>
+											<li>Research & Remediation Analyst</li>
 										</ul>
 									</div>
 									{/* JOB DATE */}

@@ -6,7 +6,7 @@ const bai_font = Bai_Jamjuree({ weight: '500', subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Scripting Visuals',
-	description: 'Dashboards, Data Analysis & Desktop Applications',
+	description: 'Cybersecurity || Automation || Web & Desktop Apps',
 };
 
 export default function RootLayout({ children }) {
