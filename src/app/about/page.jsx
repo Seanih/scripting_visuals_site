@@ -212,6 +212,11 @@ const AboutPage = () => {
 											Visuals
 										</span>{' '}
 										following 2 years of learning and skill acquisition.
+										<ul className='list-disc relative left-6 pr-6'>
+											<li>ISC2 certified September 20023</li>
+											<li>CompTIA certified June 2024</li>
+										</ul>
+										<br />
 										Offering services in:
 										<ul className='list-disc relative left-6 pr-6'>
 											<li>Scripting & Automation</li>
@@ -222,7 +227,7 @@ const AboutPage = () => {
 									</div>
 									{/* JOB DATE */}
 									<div className='bg-black p-3 rounded-lg text-red-400 font-semibold w-fit'>
-										2024 - Present
+										2022 - Present
 									</div>
 								</div>
 								{/* CENTER */}
@@ -266,7 +271,8 @@ const AboutPage = () => {
 												according to client specifications
 											</li>
 											<li>
-												Ensured projects adhered to commercial recording industry standards
+												Ensured projects adhered to commercial recording
+												industry standards
 											</li>
 										</ul>
 									</div>
