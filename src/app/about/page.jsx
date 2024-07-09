@@ -213,7 +213,7 @@ const AboutPage = () => {
 										</span>{' '}
 										following 2 years of learning and skill acquisition.
 										<ul className='list-disc relative left-6 pr-6'>
-											<li>ISC2 certified September 20023</li>
+											<li>ISC2 certified September 2023</li>
 											<li>CompTIA certified June 2024</li>
 										</ul>
 										<br />
